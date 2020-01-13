@@ -3,9 +3,10 @@ def join_ingredients(src)
   # Build a new Array that contains strings where each pair of foods is inserted into this template:
   # "I love (inner array element 0) and (inner array element 1) on my pizza""
   # As such, there should be a new String for each inner array, or pair
+  result = []
   row_index = 0
   while row_index < src.length do
-    puts "I love #{src[row_index][0]} and #{src[row_index][1]} on my pizza"
+    result << "I love #{src[row_index][0]} and #{src[row_index][1]} on my pizza"
     row_index += 1
   end
 end
